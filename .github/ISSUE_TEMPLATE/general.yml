@@ -1,0 +1,64 @@
+name: General issue
+description: バグ報告・機能提案・質問・改善提案
+title: "[Issue] "
+labels: []
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 種別
+      description: この Issue の種類を選んでください
+      options:
+        - Bug
+        - Feature request
+        - Question
+        - Documentation
+        - Refactor / maintenance
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: 何についての Issue かを書いてください
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景・目的
+      description: なぜ必要か、どんな文脈か
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順・具体例
+      description: バグであれば再現手順、提案なら具体例を書いてください
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する結果
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の結果
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 補足
+      description: 関連ログ、スクリーンショット、設計案、参考資料など
+    validations:
+      required: false
